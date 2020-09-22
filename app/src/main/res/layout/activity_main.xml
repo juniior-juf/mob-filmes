@@ -5,6 +5,7 @@
     tools:context=".view.ui.SplashScreenActivity">
 
     <data>
+
         <variable
             name="listener"
             type="com.example.mobfilmes.view.ui.SplashScreenListener" />
@@ -17,8 +18,10 @@
         <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Entrar"
             android:onClick="@{() -> listener.onClick()}"
+            android:text="Entrar"
+            android:textColor="@color/colorWhite"
+            app:backgroundTint="@color/colorAccent"
             app:layout_constraintBottom_toTopOf="parent"
             app:layout_constraintEnd_toStartOf="parent"
             app:layout_constraintStart_toEndOf="parent"
